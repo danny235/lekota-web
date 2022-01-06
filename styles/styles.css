@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+}
+
+/* Header styles */
+header#home {
+    background-color: #78A0FF;
+    width: 100px;
+    padding: 10;
+    display: flex;
+}
+
+header.whiteLogo  {
+    width: 30px;
+    height: 30px;
+    flex: 1;
+}
+/* --------------------------------------------------------- */
