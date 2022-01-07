@@ -1,24 +1,368 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap");
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    position: relative;
+  position: relative;
+  font-family: "Open Sans", sans-serif;
 }
+
+/* Global styles */
+div.store {
+  display: flex;
+  margin: 0 auto;
+}
+
+div.store a img {
+  width: 90px;
+  height: 30px;
+  margin-right: 30px;
+}
+/* ------------------- */
 
 /* Header styles */
 header#home {
-    background-color: #78A0FF;
-    width: 100px;
-    padding: 10;
-    display: flex;
+  background-color: #78a0ff;
+  width: 100%;
+  height: 100px;
+  padding: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
-header.whiteLogo  {
-    width: 30px;
-    height: 30px;
-    flex: 1;
+header#home button#menuButtonHome {
+  display: none;
+}
+
+header#home div.homeLinksList {
+  display: none;
+}
+
+header#home img.whiteLogo {
+  width: 60px;
+  height: 50px;
+}
+
+header#home div#homeLinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 35%;
+  align-items: center;
+}
+
+header#home div#homeLinks a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+header#home div#homeLinks a:nth-child(4) {
+  background-color: #fff;
+  color: #78a0ff;
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.sticky + .content {
+  padding-top: 102px;
 }
 /* --------------------------------------------------------- */
+
+/* Body of the page */
+main section#firstSection {
+  background: url("../assets/images/HomeFirstVector.png") no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 890px;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  padding: 30px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+main section#firstSection div#textDiv {
+  margin-top: 90px;
+  margin-right: 100px;
+  width: 60%;
+}
+main section#firstSection div#textDiv p {
+  color: #fff;
+}
+main section#firstSection div#textDiv p:nth-child(1) {
+  font-size: 2em;
+  font-weight: bold;
+}
+main section#firstSection div#textDiv p:nth-child(2) {
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+main section#firstSection div#textDiv p:nth-child(3) {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+main section#firstSection div#imageDiv {
+  width: 59%;
+}
+main section#firstSection div#imageDiv img#firstPhones {
+  width: 780px;
+  height: 730px;
+}
+
+main section#secondSection {
+  margin: 10px auto;
+  text-align: center;
+  width: 100%;
+}
+
+main section#secondSection p:nth-child(1) {
+  font-size: 35px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+main section#secondSection p:nth-child(2) {
+  padding: 30px;
+  font-size: 20px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5);
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+main section#thirdSection {
+  background: url("../assets/images/deskThirdSec.png") no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 90em;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+main section#thirdSection div#thirdSecImgContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+  width: 95%;
+  margin-bottom: 12em;
+}
+
+main section#thirdSection div#thirdSecImgContainer div {
+  text-align: center;
+}
+
+main section#thirdSection div#thirdSecImgContainer div img {
+  width: 280px;
+  height: 250px;
+}
+
+main section#thirdSection div#thirdSecImgContainer div p {
+  color: rgba(64, 64, 64, 0.75);
+  font-size: 16px;
+  width: 54.2%;
+  margin: 0 auto;
+}
+
+main section#thirdSection div#thirdSecTxtContainer {
+  margin: 30px auto;
+  text-align: center;
+  width: 100%;
+}
+
+main section#thirdSection div#thirdSecTxtContainer p:nth-child(1) {
+  font-size: 35px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+main section#thirdSection div#thirdSecTxtContainer p:nth-child(2) {
+  padding: 30px;
+  font-size: 17px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5);
+  width: 53%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+main section#thirdSection div#lastDiv {
+  margin: 20px auto;
+}
+main section#thirdSection div#lastDiv img {
+  width: 70em;
+  height: 600px;
+}
+/* ------------------------ */
+
+/* Footer */
+footer {
+  background-color: #78a0ff;
+  width: 100%;
+  height: 300px;
+  padding: 50px;
+  margin-top: 80px;
+}
+
+footer div.hyperLinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+footer div.hyperLinks div h2 {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+footer div.hyperLinks div a {
+  text-decoration: none;
+  color: #fff;
+  margin-bottom: 10px;
+  display: block;
+}
+
+footer div.bottomFooter {
+  color: #fff;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+footer div.bottomFooter div.socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+footer div.bottomFooter div.socials a {
+  text-decoration: none;
+  margin-right: 2px;
+}
+
+footer div.bottomFooter div.socials a img {
+  width: 30px;
+  height: 30px;
+}
+/* --------------- */
+
+/* media query for screens below 720px */
+@media screen and (max-width: 720px) {
+  /* header */
+  header#home div#homeLinks {
+    display: none;
+  }
+  header#home button#menuButtonHome {
+    display: flex;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+  }
+  header#home button#menuButtonHome img {
+    width: 50px;
+    height: 35px;
+  }
+  header#home div.homeLinksList {
+    position: absolute;
+    top: 0;
+    background-color: #eef2fd;
+    height: 98vh;
+    width: 100%;
+    z-index: 1;
+    
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  
+  header#home div.homeLinksList a {
+    color: #78a0ff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 40px 0;
+  }
+  
+  header#home div.homeLinksList a:nth-child(5) {
+    background-color: #78a0ff;
+    color: #fff;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+  }
+
+  header#home div.homeLinksList button.closeMenuBtn {
+    outline: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    align-self: flex-end;
+  }
+  .showMenu {
+    display: flex;
+  }
+  /* ---------------------- */
+
+/* first section */
+  main section#firstSection {
+    background: url("../assets/images/firstSecMob.png") no-repeat;
+    flex-direction: column;
+    background-position: center;
+    width: 100%;
+    height: 890px;
+    background-size: cover;
+  }
+  main section#firstSection div#textDiv {
+      text-align: center;
+      width: 100%;
+  }
+  main section#firstSection div#imageDiv {
+    width: 100%;
+    margin-top: 50px;
+  }
+  main section#firstSection div#imageDiv img#firstPhones {
+    width: 100%;
+    height: 370px;
+  }
+  /* -------------- */
+
+  
+}
+/* -------- */

@@ -1,33 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lekota</title>
-</head>
-<body>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header id="home">
-        <div>
-            <img className="white-logo" src="./assets/images/Logo - White 1.png" alt="company-logo">
-        </div>
-        <div>
-            <a href="#">
-                <p>Home</p>
-            </a>
-            <a href="#">
-                <p>Features</p>
-            </a>
-            <a href="#">
-                <p>About Us</p>
-            </a>
-            <a href="#">
-                <p>Get App</p>
-            </a>
-        </div>
+      <a style="flex: 1" href="/">
+        <img
+          class="whiteLogo"
+          src="./assets/images/LogoWhite.png"
+          alt="company-logo"
+        />
+      </a>
+      <button id="menuButtonHome">
+          <img src="./assets/images/Menu.png" alt="Menu button">
+      </button>
+      <div id="homeLinks">
+        <a href="#">
+          <p>Home</p>
+        </a>
+        <a href="#">
+          <p>Features</p>
+        </a>
+        <a href="#">
+          <p>About Us</p>
+        </a>
+        <a href="#">
+          <p>Get App</p>
+        </a>
+      </div>
+      <div class="homeLinksList">
+        <button class="closeMenuBtn">
+          <img src="./assets/images/Cancel.png" alt="Close menu">
+        </button>
+        <a href="#">
+          <p>Home</p>
+        </a>
+        <a href="#">
+          <p>Features</p>
+        </a>
+        <a href="#">
+          <p>About Us</p>
+        </a>
+        <a href="#">
+          <p>Get App</p>
+        </a>
+      </div>
     </header>
-    <main></main>
-    <footer></footer>
-    
-</body>
+    <main>
+      <section id="firstSection">
+        <div id="textDiv">
+          <p>On-demand marketplace</p>
+          <p>for artisans and freelancers</p>
+
+          <p>
+            Hire the best professional service provide in your neighbourhood at
+            your convenience
+          </p>
+
+          <div style="margin: 0" class="store">
+            <a href="#">
+              <img src="./assets/images/AppStore.png" alt="AppStore" />
+            </a>
+            <a href="#">
+              <img src="./assets/images/PlayStore.png" alt="PlayStore" />
+            </a>
+          </div>
+        </div>
+        <div id="imageDiv">
+          <img
+            id="firstPhones"
+            src="./assets/images/HomeFirstVectorImage.png"
+            alt="First device images"
+          />
+        </div>
+      </section>
+      <section id="secondSection">
+        <p>A New Concept of Service Delivery</p>
+        <p>
+          Imagine a platform that gives you the luxury of hiring vetted
+          professionals and freelancers near you!
+        </p>
+      </section>
+      <section id="thirdSection">
+        <div id="thirdSecImgContainer">
+          <div>
+            <img
+              src="./assets/images/thirdSecFirstImg.png"
+              alt="Hire good and verified on-demand professionals"
+            />
+            <p>Hire good and verified on-demand professionals</p>
+          </div>
+          <div>
+            <img
+              src="./assets/images/thirdSecSecimg.png"
+              alt="Get to know when they'll arrive"
+            />
+            <p>Get to know when they'll arrive</p>
+          </div>
+          <div>
+            <img src="./assets/images/thirdSecThirdImg.png" alt="" />
+            <p>Get services from freelance contractors</p>
+          </div>
+        </div>
+        <div id="thirdSecTxtContainer">
+          <p>Have a Skill or a Small Business?</p>
+          <p>
+            We are building an online marketplace to help you scale your
+            customer growth. We accept a wide variety of skills and business
+            category on Service. You can register as an individual or as a
+            business providing on-demand and freelance services. Get verified
+            and join us today!
+          </p>
+        </div>
+        <div id="lastDiv">
+          <img
+            src="./assets/images/thirdSectionPhones.png"
+            alt="thirdSectionPhones"
+          />
+        </div>
+        <div class="store">
+          <a href="#">
+            <img src="./assets/images/AppStore.png" alt="AppStore" />
+          </a>
+          <a href="#">
+            <img src="./assets/images/PlayStore.png" alt="PlayStore" />
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="hyperLinks">
+        <div>
+          <h2>Company</h2>
+          <a href="#">
+
+              <p>About</p>
+          </a>
+          <a href="#">
+
+              <p>Blog</p>
+          </a>
+          <a href="#">
+
+              <p>Contact Us</p>
+          </a>
+        </div>
+        <div>
+          <h2>Product</h2>
+          <a href="#">
+
+              <p>How it Works</p>
+          </a>
+          <a href="#">
+
+              <p>Service Providers</p>
+          </a>
+        </div>
+
+        <div>
+          <h2>Legal</h2>
+          <a href="#">
+
+              <p>Privacy Policy</p>
+          </a>
+          <a href="#">
+
+              <p>Terms of Use</p>
+          </a>
+        </div>
+        <div>
+          <h2>Product</h2>
+          <a href="#">
+
+              <p>FAQ</p>
+          </a>
+          <a href="#">
+
+              <p>Cities</p>
+          </a>
+          <a href="#">
+
+              <p>Safety</p>
+          </a>
+        </div>
+      </div>
+      <div class="bottomFooter">
+          <div class="socials">
+              <a href="#">
+                <img src="./assets/images/instagram1.png" alt="instagram">
+              </a>
+              <a href="#">
+                <img src="./assets/images/twittr1.png" alt="twitter">
+              </a>
+              <a href="#">
+                <img src="./assets/images/facebook1.png" alt="facebook">
+              </a>
+              <a href="#">
+                <img src="./assets/images/linkedin1.png" alt="linkedin">
+              </a>
+          </div>
+          <p>&copy; 2021 Limited. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="./scripts/app.js"></script>
+  </body>
 </html>
