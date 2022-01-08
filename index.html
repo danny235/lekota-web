@@ -22,17 +22,18 @@
           alt="company-logo"
         />
       </a>
-      <button id="menuButtonHome">
+      <button id="menuButtonHome" onclick="showMenu()">
           <img src="./assets/images/Menu.png" alt="Menu button">
       </button>
       <div id="homeLinks">
-        <a href="#">
+        <a href="/">
           <p>Home</p>
+          <div class="whiteActive"></div>
         </a>
-        <a href="#">
+        <a href="./pages/features.html">
           <p>Features</p>
         </a>
-        <a href="#">
+        <a href="./pages/about.html">
           <p>About Us</p>
         </a>
         <a href="#">
@@ -40,16 +41,16 @@
         </a>
       </div>
       <div class="homeLinksList">
-        <button class="closeMenuBtn">
+        <button class="closeMenuBtn" onclick="closeMenu()">
           <img src="./assets/images/Cancel.png" alt="Close menu">
         </button>
         <a href="#">
           <p>Home</p>
         </a>
-        <a href="#">
+        <a href="./pages/features.html">
           <p>Features</p>
         </a>
-        <a href="#">
+        <a href="./pages/about.html">
           <p>About Us</p>
         </a>
         <a href="#">
@@ -68,7 +69,7 @@
             your convenience
           </p>
 
-          <div style="margin: 0" class="store">
+          <div class="store">
             <a href="#">
               <img src="./assets/images/AppStore.png" alt="AppStore" />
             </a>
@@ -129,15 +130,15 @@
             alt="thirdSectionPhones"
           />
         </div>
-        <div class="store">
-          <a href="#">
-            <img src="./assets/images/AppStore.png" alt="AppStore" />
-          </a>
-          <a href="#">
-            <img src="./assets/images/PlayStore.png" alt="PlayStore" />
-          </a>
-        </div>
       </section>
+      <div class="store" style="border-bottom: 80px; display:  flex; align-items: center; justify-content: center;">
+        <a href="#">
+          <img src="./assets/images/AppStore.png" alt="AppStore" />
+        </a>
+        <a href="#">
+          <img src="./assets/images/PlayStore.png" alt="PlayStore" />
+        </a>
+      </div>
     </main>
     <footer>
       <div class="hyperLinks">
