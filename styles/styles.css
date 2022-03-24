@@ -209,7 +209,7 @@ main#featuresMain section.explainHow p:nth-child(3) {
 }
 main#featuresMain section#details {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr .5fr 1fr;
 }
 
 main#featuresMain section#details div#numbers {
@@ -217,14 +217,19 @@ main#featuresMain section#details div#numbers {
   flex-direction: column;
   padding-left: 80px;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 50px;
 }
 main#featuresMain section#details div#numbers div {
-  margin: 25px 0px 15px 0px;
+  margin: 35px 0px 35px 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+main#featuresMain section#details div#numbers div:nth-child(3), main#featuresMain section#details div#numbers div:nth-child(4){
+
+  display: none;
+
 }
 main#featuresMain section#details div#numbers div p {
   width: 60%;
@@ -1054,10 +1059,29 @@ footer div.bottomFooter div.socials a img {
     display: flex;
     flex-direction: row;
    
+    margin: 35px 0px 35px 0px;
     text-align: left;
-    margin-top: 30px;
+
     width: 70em;
   }
+
+  main#featuresMain section#details div#numbers div {
+    margin: 35px 0px 35px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  main#featuresMain section#details div#numbers.addon  {
+    display: none;
+    
+  }
+  main#featuresMain section#details div#numbers div:nth-child(3), main#featuresMain section#details div#numbers div:nth-child(4){
+  
+    display: flex;
+  
+  }
+
   main#featuresMain section#details div#numbers div {
     margin: 10px 0px 20px 0px;
     display: flex;
