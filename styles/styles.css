@@ -63,8 +63,8 @@ header#home div.homeLinksList {
 }
 
 header#home a img.whiteLogo {
-  width: 230px;
-  height: 170px;
+  width: 160px;
+  height: 100px;
 }
 
 header#home div#homeLinks {
@@ -132,8 +132,8 @@ header#features div.homeLinksList {
 }
 
 header#features a img.whiteLogo {
-  width: 230px;
-  height: 170px;
+  width: 160px;
+  height: 100px;
 }
 
 header#features div#homeLinks {
