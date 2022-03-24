@@ -1,5 +1,6 @@
 // When the user scrolls the page, execute myFunction
 window.onscroll = function() {myFunction()};
+// browser-sync --server start --files "*/*"
 
 // Get the header
 var header = document.querySelector("header");

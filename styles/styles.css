@@ -209,7 +209,7 @@ main#featuresMain section.explainHow p:nth-child(3) {
 }
 main#featuresMain section#details {
   display: grid;
-  grid-template-columns: 1fr .5fr 1fr;
+  grid-template-columns: 1fr 0.5fr 1fr;
 }
 
 main#featuresMain section#details div#numbers {
@@ -226,10 +226,9 @@ main#featuresMain section#details div#numbers div {
   align-items: center;
   justify-content: center;
 }
-main#featuresMain section#details div#numbers div:nth-child(3), main#featuresMain section#details div#numbers div:nth-child(4){
-
+main#featuresMain section#details div#numbers div:nth-child(3),
+main#featuresMain section#details div#numbers div:nth-child(4) {
   display: none;
-
 }
 main#featuresMain section#details div#numbers div p {
   width: 60%;
@@ -582,7 +581,6 @@ main section#thirdSection div#thirdSecImgContainer {
 main section#thirdSection div#thirdSecImgContainer div {
   text-align: center;
   width: 100%;
-
 }
 
 main section#thirdSection div#thirdSecImgContainer div img {
@@ -758,9 +756,9 @@ footer div.bottomFooter div.socials a img {
     background: url("../assets/images/firstSecMob.png") no-repeat;
     display: grid;
     grid-template-columns: 1fr;
-    background-position: center;
+    background-position: top;
     width: 100%;
-    height: 890px;
+    height: 400px;
     background-size: cover;
     padding: 0;
   }
@@ -787,9 +785,10 @@ footer div.bottomFooter div.socials a img {
   }
   main section#firstSection div#imageDiv {
     width: 100vw;
-    margin-top: -400px;
+    margin-top: -100px;
     padding: 0;
     display: flex;
+    height: 400px;
   }
   main section#firstSection div#imageDiv img#firstPhones {
     display: none;
@@ -819,16 +818,19 @@ footer div.bottomFooter div.socials a img {
     margin: 10px auto;
     text-align: center;
     width: 100%;
+    margin-top: 200px;
+    display: block;
+    height: 10px;
   }
 
-  main section#secondSection p:nth-child(1) {
-    font-size: 22px;
+  main section#secondSection h2 {
+    font-size: 18px;
     font-weight: bold;
     color: rgba(0, 0, 0, 0.5);
   }
 
-  main section#secondSection p:nth-child(2) {
-    font-size: 16px;
+  main section#secondSection p {
+    font-size: 14px;
     font-weight: 400;
     color: rgba(0, 0, 0, 0.5);
     width: 100%;
@@ -840,9 +842,9 @@ footer div.bottomFooter div.socials a img {
   /* Third section */
   main section#thirdSection {
     background: url("../assets/images/thirdSecMob.png") no-repeat;
-    background-position: center;
+    background-position: bottom;
     width: 100%;
-    height: 90em;
+    height: 50em;
     background-size: cover;
     position: relative;
     display: flex;
@@ -856,18 +858,18 @@ footer div.bottomFooter div.socials a img {
     justify-content: space-between;
     align-items: center;
     width: 95%;
-    margin-bottom: 3em;
-    margin-top: 20em;
+    margin-bottom: 1em;
+    margin-top: 7em;
   }
 
   main section#thirdSection div#thirdSecImgContainer div {
     text-align: center;
-    margin-bottom: 70px;
+    margin-bottom: 30px;
   }
 
   main section#thirdSection div#thirdSecImgContainer div img {
-    width: 200px;
-    height: 170px;
+    width: 130px;
+    height: 100px;
   }
 
   main section#thirdSection div#thirdSecImgContainer div p {
@@ -1052,46 +1054,44 @@ footer div.bottomFooter div.socials a img {
   main#featuresMain section#details {
     display: flex;
     flex-direction: column-reverse;
-    overflow-x: scroll;
+  }
+
+  main#featuresMain section#details div#phoneDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   main#featuresMain section#details div#numbers {
     display: flex;
     flex-direction: row;
-   
-    margin: 35px 0px 35px 0px;
     text-align: left;
-
-    width: 70em;
-  }
-
-  main#featuresMain section#details div#numbers div {
-    margin: 35px 0px 35px 0px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  main#featuresMain section#details div#numbers.addon  {
-    display: none;
+    white-space: pre-wrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
     
   }
-  main#featuresMain section#details div#numbers div:nth-child(3), main#featuresMain section#details div#numbers div:nth-child(4){
-  
+
+  main#featuresMain section#details div#numbers.addon {
+    display: none;
+  }
+  main#featuresMain section#details div#numbers div:nth-child(3),
+  main#featuresMain section#details div#numbers div:nth-child(4) {
     display: flex;
-  
   }
 
   main#featuresMain section#details div#numbers div {
-    margin: 10px 0px 20px 0px;
+    margin: 10px 50px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: left;
-    width: 100%;
+
+    width: 100em;
   }
   main#featuresMain section#details div#numbers div p {
-    width: 80%;
+    width: 200px;
     color: rgba(0, 0, 0, 0.5);
     font-size: 13px;
     margin-top: 10px;
@@ -1170,7 +1170,6 @@ footer div.bottomFooter div.socials a img {
   main#About section.explainHow img {
     width: 100%;
     height: 250px;
-   
   }
 
   div.gradientDiv {
