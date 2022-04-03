@@ -71,7 +71,7 @@ header#home div#homeLinks {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 35%;
+  width: 45%;
   align-items: center;
 }
 
@@ -87,16 +87,20 @@ header#home div#homeLinks a p {
   margin-bottom: 8px;
 }
 
-header#home div#homeLinks a:nth-child(4) {
+header#home div#homeLinks button {
+  border: none;
+  outline: none;
   background-color: #fff;
   color: #78a0ff;
   width: 100px;
   height: 45px;
-  text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
 }
 
 .sticky {
@@ -156,16 +160,20 @@ header#features div#homeLinks a p {
   margin-bottom: 8px;
 }
 
-header#features div#homeLinks a:nth-child(4) {
+header#features div#homeLinks button {
+  border: none;
+  outline: none;
   background-color: #78a0ff;
   color: #fff;
   width: 100px;
   height: 45px;
-  text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
 }
 
 .sticky {
@@ -483,14 +491,15 @@ main section#firstSection {
   position: relative;
   display: grid;
   grid-template-columns: 2fr 1fr;
-  padding: 20px;
+  padding: 30px;
   flex-direction: row;
 }
 
 main section#firstSection div#textDiv {
   margin-top: 90px;
   margin-right: 100px;
-  width: 400px;
+  width: 50%;
+  padding: 20px;
 }
 main section#firstSection div#textDiv p,
 h1 {
@@ -501,7 +510,7 @@ main section#firstSection div#textDiv h1 {
   font-weight: bold;
 }
 main section#firstSection div#textDiv p {
-  font-size: 18px;
+  font-size: 1em;
   font-weight: 400;
   margin-bottom: 10px;
 }
@@ -511,8 +520,13 @@ main section#firstSection div#textDiv p:nth-child(3) {
   margin-bottom: 30px;
 }
 
+main section#firstSection div#imageDiv {
+  position: absolute;
+  right: 15px;
+}
+
 main section#firstSection div#imageDiv img#firstPhones {
-  width: auto;
+  width: 650px;
   height: 650px;
 }
 main section#firstSection div#imageDiv img#firstPhonesMob {
@@ -532,9 +546,9 @@ main div#bottomStore a {
   margin: 10px;
   padding: 0;
 }
-main div#bottomStore a {
-  margin: 20px;
-  padding: 0;
+main div#store a img {
+  width: 100px;
+  height: 35px;
 }
 
 main section#secondSection {
@@ -584,8 +598,8 @@ main section#thirdSection div#thirdSecImgContainer div {
 }
 
 main section#thirdSection div#thirdSecImgContainer div img {
-  width: 280px;
-  height: 250px;
+  width: 250px;
+  height: 220px;
 }
 
 main section#thirdSection div#thirdSecImgContainer div p {
@@ -621,7 +635,7 @@ main section#thirdSection div#lastDiv {
   margin: 20px auto;
 }
 main section#thirdSection div#lastDiv img {
-  width: 70em;
+  width: 100%;
   height: 600px;
   margin-bottom: 80px;
 }
@@ -684,9 +698,279 @@ footer div.bottomFooter div.socials a img {
   height: 30px;
 }
 /* --------------- */
+@media (min-width: 900px) and (max-width: 1000px) {
+  main section#firstSection {
+    background: url("../assets/images/HomeFirstVector.png") no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 590px;
+    background-size: cover;
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 30px;
+    flex-direction: row;
+  }
+  /* second section */
+  main section#secondSection {
+    margin: 10px auto;
+    text-align: center;
+    width: 100%;
+    margin-top: 200px;
+    display: block;
+    height: 100px;
+  }
 
-/* media query for screens below 720px */
-@media screen and (max-width: 720px) {
+  main section#secondSection h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  main section#secondSection p {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  /* ------------- */
+
+  /* Third section */
+  main section#thirdSection {
+    background: url("../assets/images/deskThirdSec.png") no-repeat;
+    background-position: bottom;
+    width: 100%;
+    height: 860px;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30em;
+  }
+
+  main section#thirdSection div#thirdSecImgContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin-bottom: 1em;
+    margin-top: 7em;
+  }
+
+  main section#thirdSection div#thirdSecImgContainer div {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  main section#thirdSection div#thirdSecImgContainer div img {
+    width: 130px;
+    height: 100px;
+  }
+
+  main section#thirdSection div#thirdSecImgContainer div p {
+    color: rgba(64, 64, 64, 0.75);
+    font-size: 14px;
+    width: 170px;
+    margin: 0 auto;
+  }
+
+  main section#thirdSection div#thirdSecTxtContainer {
+    margin: 30px auto;
+    text-align: center;
+    width: 100%;
+    margin-top: 6em;
+  }
+
+  main section#thirdSection div#thirdSecTxtContainer h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  main section#thirdSection div#thirdSecTxtContainer p:nth-child(2) {
+    font-size: 15px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  main section#thirdSection div#thirdSecTxtContainer p:nth-child(3) {
+    font-size: 15px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  main section#thirdSection div#lastDiv {
+    width: 100%;
+  }
+  main section#thirdSection div#lastDiv img {
+    width: 100%;
+    height: auto;
+  }
+
+  main div#bottomStore {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+  main div#bottomStore a {
+    margin: 20px;
+    padding: 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 899px) {
+  /* Body of the page */
+  main section#firstSection {
+    background: url("../assets/images/HomeFirstVector.png") no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 590px;
+    background-size: cover;
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 30px;
+    flex-direction: row;
+  }
+
+  main section#firstSection div#imageDiv {
+    right: 5px;
+  }
+  main section#firstSection div#imageDiv img#firstPhones {
+    width: 100%;
+    height: 500px;
+  }
+  /* second section */
+  main section#secondSection {
+    margin: 10px auto;
+    text-align: center;
+    width: 100%;
+    margin-top: 200px;
+    display: block;
+    height: 100px;
+  }
+
+  main section#secondSection h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  main section#secondSection p {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  /* ------------- */
+
+  /* Third section */
+  main section#thirdSection {
+    background: url("../assets/images/deskThirdSec.png") no-repeat;
+    background-position: bottom;
+    width: 100%;
+    height: 860px;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30em;
+  }
+
+  main section#thirdSection div#thirdSecImgContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin-bottom: 1em;
+    margin-top: 7em;
+  }
+
+  main section#thirdSection div#thirdSecImgContainer div {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  main section#thirdSection div#thirdSecImgContainer div img {
+    width: 130px;
+    height: 100px;
+  }
+
+  main section#thirdSection div#thirdSecImgContainer div p {
+    color: rgba(64, 64, 64, 0.75);
+    font-size: 14px;
+    width: 170px;
+    margin: 0 auto;
+  }
+
+  main section#thirdSection div#thirdSecTxtContainer {
+    margin: 30px auto;
+    text-align: center;
+    width: 100%;
+    margin-top: 6em;
+  }
+
+  main section#thirdSection div#thirdSecTxtContainer h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  main section#thirdSection div#thirdSecTxtContainer p:nth-child(2) {
+    font-size: 15px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  main section#thirdSection div#thirdSecTxtContainer p:nth-child(3) {
+    font-size: 15px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  main section#thirdSection div#lastDiv {
+    width: 100%;
+  }
+  main section#thirdSection div#lastDiv img {
+    width: 100%;
+    height: auto;
+  }
+
+  main div#bottomStore {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+  main div#bottomStore a {
+    margin: 20px;
+    padding: 0;
+  }
+  /* ------------- */
+}
+
+/* media query for screens below 767px */
+@media screen and (max-width: 767px) {
   /* header */
   header#home {
     padding: 10px;
@@ -758,7 +1042,7 @@ footer div.bottomFooter div.socials a img {
     grid-template-columns: 1fr;
     background-position: top;
     width: 100%;
-    height: 400px;
+    height: 450px;
     background-size: cover;
     padding: 0;
   }
@@ -771,11 +1055,7 @@ footer div.bottomFooter div.socials a img {
     font-size: 1.3em;
     font-weight: bold;
   }
-  /* main section#firstSection div#textDiv p:nth-child(2) {
-    font-size: 22px;
-    font-weight: 400;
-    margin-bottom: 10px;
-  } */
+
   main section#firstSection div#textDiv p:nth-child(2) {
     font-size: 15px;
     margin: 0 auto;
@@ -785,17 +1065,19 @@ footer div.bottomFooter div.socials a img {
   }
   main section#firstSection div#imageDiv {
     width: 100vw;
-    margin-top: -100px;
     padding: 0;
     display: flex;
     height: 400px;
+    top: 250px;
+    left: 0;
+    right: 0;
   }
   main section#firstSection div#imageDiv img#firstPhones {
     display: none;
   }
   main section#firstSection div#imageDiv img#firstPhonesMob {
     width: 100vw;
-    height: auto;
+    height: 500px;
     display: block;
     align-self: center;
   }
@@ -844,7 +1126,7 @@ footer div.bottomFooter div.socials a img {
     background: url("../assets/images/thirdSecMob.png") no-repeat;
     background-position: bottom;
     width: 100%;
-    height: 50em;
+    height: 830px;
     background-size: cover;
     position: relative;
     display: flex;
@@ -910,7 +1192,7 @@ footer div.bottomFooter div.socials a img {
   }
 
   main section#thirdSection div#lastDiv {
-    width: 100vw;
+    width: 100%;
   }
   main section#thirdSection div#lastDiv img {
     width: 100%;
@@ -1071,7 +1353,6 @@ footer div.bottomFooter div.socials a img {
     overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
     width: 100%;
-    
   }
 
   main#featuresMain section#details div#numbers.addon {
@@ -1319,5 +1600,98 @@ footer div.bottomFooter div.socials a img {
     font-size: 15px;
   }
   /* ---------------------- */
+}
+@media screen and (min-width: 445px) and (max-width: 765px) {
+  /* Third section */
+  main section#thirdSection {
+    background: url("../assets/images/thirdSecMob.png") no-repeat;
+    background-position: bottom;
+    width: 100%;
+    height: 1530px;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20em;
+  }
+
+  main section#thirdSection div#thirdSecImgContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin-bottom: 1em;
+    margin-top: 7em;
+  }
+
+  main section#thirdSection div#thirdSecImgContainer div {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  main section#thirdSection div#thirdSecImgContainer div img {
+    width: 130px;
+    height: 100px;
+  }
+
+  main section#thirdSection div#thirdSecImgContainer div p {
+    color: rgba(64, 64, 64, 0.75);
+    font-size: 14px;
+    width: 170px;
+    margin: 0 auto;
+  }
+
+  main section#thirdSection div#thirdSecTxtContainer {
+    margin: 30px auto;
+    text-align: center;
+    width: 100%;
+    margin-top: 6em;
+  }
+
+  main section#thirdSection div#thirdSecTxtContainer h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  main section#thirdSection div#thirdSecTxtContainer p:nth-child(2) {
+    font-size: 15px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  main section#thirdSection div#thirdSecTxtContainer p:nth-child(3) {
+    font-size: 15px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  main section#thirdSection div#lastDiv {
+    width: 100%;
+  }
+  main section#thirdSection div#lastDiv img {
+    width: 100%;
+    height: auto;
+  }
+
+  main div#bottomStore {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+  main div#bottomStore a {
+    margin: 20px;
+    padding: 0;
+  }
+  /* ------------- */
 }
 /* -------- */
